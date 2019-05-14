@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>League Dmg</title>
+</head>
+
+<body>
+	<form onsubmit="event.preventDefault();" action="index.html" id="form-id">
+<!--		Gold : <input type="text" id="goldVal" value=0><br>
+		<button onclick = "validItemsPrintOut(goldVal.value)">All Available Items</button>
+		<br>
+		<button onclick = "exactItem(goldVal.value)">Exact Item</button>-->
+		
+		Champion: <input type="text" id="champName" value=Aatrox><br>
+		Enemy: <input type="text" id="enemy1" value=Jax><br>
+		Enemy: <input type="text" id="enemy2" value=Sejuani><br>
+		Enemy: <input type="text" id="enemy3" value=Annie><br>
+		Enemy: <input type="text" id="enemy4" value=Lucian><br>
+		Enemy: <input type="text" id="enemy5" value=Thresh><br>
+		<button onclick = "champData(champName.value,enemy1.value,enemy2.value,enemy3.value,enemy4.value,enemy5.value)">Calculate</button>
+	</form>
+	<table id="itemList"></table>
+	<br>
+	<table id="stats"></table>
+	<p id="summonerStats"></p>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
